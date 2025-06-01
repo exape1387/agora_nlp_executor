@@ -1,0 +1,363 @@
+[
+  {
+    "id": "case_001_basic",
+    "input": "Mr. John Smith, a 67-year-old male, was admitted with chest pain and diagnosed with myocardial infarction. He was prescribed aspirin and underwent an angioplasty.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_002_typos",
+    "input": "Mr. Jhon Smiht, a 67-yer-old mael, was admited with ches pain and diagnozed with mycordial infraction. He was presribed asprin and underwent an angiolplasty.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_003_abbreviations",
+    "input": "Mr. John Smith, 67 yo male, came in with CP and was dx with MI. Given ASA and sent for PCI.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+
+  {
+    "id": "case_004_basic",
+    "input": "Mr. Mark Davis, a 72-year-old male, was diagnosed with hypertension and chest pain. He takes aspirin and underwent an angioplasty.",
+    "expected": {
+      "patient_name": "Mark Davis",
+      "age": 72,
+      "gender": "male",
+      "diagnoses": ["hypertension", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_005_basic",
+    "input": "Mr. Alan Brooks, 59 years old male, reported with myocardial infarction. Aspirin was prescribed. Angioplasty was performed.",
+    "expected": {
+      "patient_name": "Alan Brooks",
+      "age": 59,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_006_basic",
+    "input": "Mr. Steve Carter, a 63-year-old male, experienced chest pain. He was diagnosed with myocardial infarction and prescribed aspirin. Angioplasty followed.",
+    "expected": {
+      "patient_name": "Steve Carter",
+      "age": 63,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_007_basic",
+    "input": "Mr. Luke Adams, 70-year-old male, was treated for chest pain and myocardial infarction. Aspirin was administered and he underwent angioplasty.",
+    "expected": {
+      "patient_name": "Luke Adams",
+      "age": 70,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_008_basic",
+    "input": "Mr. Kevin Blake, a 61 yo male, came in with chest pain. Diagnosed with myocardial infarction. Treated with aspirin and angioplasty.",
+    "expected": {
+      "patient_name": "Kevin Blake",
+      "age": 61,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_009_basic",
+    "input": "Mr. Brian Hall, 65-year-old male, presented with chest pain and was diagnosed with myocardial infarction. Treatment included aspirin and angioplasty.",
+    "expected": {
+      "patient_name": "Brian Hall",
+      "age": 65,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_010_basic",
+    "input": "Mr. Greg Norton, a 66-year-old male, suffered chest pain and myocardial infarction. He received aspirin and an angioplasty procedure.",
+    "expected": {
+      "patient_name": "Greg Norton",
+      "age": 66,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+
+  {
+    "id": "case_011_typo",
+    "input": "Mr. Kavin Blake, a 61 yers old mael, came in with chset pain. Diagonsed with mycordial infrction. Treated with asprin and angiolplasty.",
+    "expected": {
+      "patient_name": "Kevin Blake",
+      "age": 61,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_012_typo",
+    "input": "Mr. Brain Hall, 65-yer-old mael, had chset pain and was diagnozd with mycordial infraction. Tratement included asprin and angiloplasty.",
+    "expected": {
+      "patient_name": "Brian Hall",
+      "age": 65,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_013_typo",
+    "input": "Mr. Grag Narton, a 66 yer old mael, sufered ches pain and mycordial infractoin. He resived asprin and an angiolplasty procidure.",
+    "expected": {
+      "patient_name": "Greg Norton",
+      "age": 66,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_014_typo",
+    "input": "Mr. Marck Devis, a 72-yer-old mael, was dignosed with hipertension and chest pain. He takes asprin and underwent an angiolplasty.",
+    "expected": {
+      "patient_name": "Mark Davis",
+      "age": 72,
+      "gender": "male",
+      "diagnoses": ["hypertension", "chest pain"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_015_typo",
+    "input": "Mr. Alen Bruks, 59 years old mael, had a mycordial infractoin. Asprin was prescribd. Angiolplasty was don.",
+    "expected": {
+      "patient_name": "Alan Brooks",
+      "age": 59,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": ["angioplasty"],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_016_negation_medication",
+    "input": "Mr. John Smith, a 67-year-old male, was not given aspirin due to allergy.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": [],
+      "procedures": [],
+      "medications": []
+    }
+  },
+  {
+    "id": "case_017_negation_diagnosis",
+    "input": "Mr. John Smith, a 67-year-old male, had no signs of chest pain or myocardial infarction.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": [],
+      "procedures": [],
+      "medications": []
+    }
+  },
+  {
+    "id": "case_018_negation_procedure",
+    "input": "Mr. John Smith, a 67-year-old male, was diagnosed with myocardial infarction but did not undergo angioplasty.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": [],
+      "medications": []
+    }
+  },
+  {
+    "id": "case_019_ambiguous_history",
+    "input": "Mr. John Smith, a 67-year-old male, had a history of chest pain and myocardial infarction.",
+    "ambiguous": true,
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction", "chest pain"],
+      "procedures": [],
+      "medications": []
+    }
+  },
+  {
+    "id": "case_020_ambiguous_possibility",
+    "input": "Mr. John Smith, a 67-year-old male, was possibly suffering from myocardial infarction.",
+    "ambiguous": true,
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": [],
+      "medications": []
+    }
+  },
+  {
+    "id": "case_021_edge_very_old",
+    "input": "Mr. John Smith, a 115-year-old male, was treated for myocardial infarction with aspirin.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 115,
+      "gender": "male",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": [],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_022_edge_no_gender",
+    "input": "Mr. John Smith, a 67-year-old, was diagnosed with myocardial infarction and treated with aspirin.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": 67,
+      "gender": "unknown",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": [],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_023_structure_passive",
+    "input": "Aspirin was prescribed after Mr. John Smith was diagnosed with myocardial infarction.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": [],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_024_structure_non_standard",
+    "input": "Following the diagnosis, aspirin was administered to Mr. John Smith for myocardial infarction.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": ["myocardial infarction"],
+      "procedures": [],
+      "medications": ["aspirin"]
+    }
+  },
+  {
+    "id": "case_025_double_negation",
+    "input": "Mr. John Smith did not deny chest pain.",
+    "expected": {
+      "patient_name": "John Smith",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": [],
+      "procedures": [],
+      "medications": [],
+      "symptoms": ["chest pain"]
+    }
+  },
+  {
+    "id": "case_026_negation_conjunctions",
+    "input": "No chest pain or dizziness reported.",
+    "expected": {
+      "patient_name": "Unknown",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": [],
+      "procedures": [],
+      "medications": [],
+      "symptoms": []
+    }
+  },
+  {
+    "id": "case_027_negation_synonyms",
+    "input": "Patient denied any complaints of chest discomfort.",
+    "expected": {
+      "patient_name": "Unknown",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": [],
+      "procedures": [],
+      "medications": [],
+      "symptoms": []
+    }
+  },
+  {
+    "id": "case_028_negation_abbreviation",
+    "input": "No MI was observed during examination.",
+    "expected": {
+      "patient_name": "Unknown",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": []
+    }
+  },
+  {
+    "id": "case_029_negation_sentence_boundary",
+    "input": "Myocardial infarction was ruled out. Patient has hypertension.",
+    "expected": {
+      "patient_name": "Unknown",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": ["hypertension"]
+    }
+  },
+  {
+    "id": "case_030_negation_temporal",
+    "input": "No chest pain was present last year.",
+    "expected": {
+      "patient_name": "Unknown",
+      "age": -1,
+      "gender": "unknown",
+      "diagnoses": []
+    }
+  }
+]
