@@ -1,4 +1,4 @@
-# Welcome to the Clinical NLP extraction project made as a test assessment for Axpo
+# Welcome to the Clinical NLP extraction project made as a test assessment for Agora
 
 Below in this file I will describe key project's features, how to use it and answer a bunch of questions from 
 Assessment task.pdf
