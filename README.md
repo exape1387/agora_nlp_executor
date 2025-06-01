@@ -156,7 +156,7 @@ Improve error reporting and logging to speed up debugging and issue resolution.
 #### Month 5+
 
 Integrate with downstream clinical workflows or analytics platforms, adding E2E testing.
-Consider moving from regex/fuzzy matching to hybrid ML/NLP models for better scalability.
+Consider moving from regex/fuzzy matching to hybrid ML/NLP models (using tf-idf algorithm) for better scalability.
 Develop user-facing QA dashboards or reports for continuous quality visibility.
 Plan for regular retraining/updating cycles as clinical terminology evolves.
 Project infrastructure to keep the service on external machine.
