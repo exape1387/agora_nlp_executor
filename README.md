@@ -81,7 +81,7 @@ Slight variations and partial matches to validate fuzzy logic thresholds.
 Run extraction on curated test cases (including edge cases).
 Integrate tests in CI/CD pipelines (GitHub Actions, Jenkins etc.) for continuous validation.
 In this project I use TypeScript + Jest + Fuzzy, as it provides fast, high-level executions with assertions and validations.
-Also, Python and JavaScript can be used easily for those purposes.
+Possible tools, frameworks and languages alternatives: Python (ideal when scaling beyond regex/fuzzy matching to transformers like spaCy, scispaCy); mocha+chai, supertest, sinon, pytest; fuse.js, compromise, natural, lodash, levenshein-based family.
 Usually, working with text, requires a library which can match expectations through threshold. The best option for this is Fuzzy, it has a lot
 of settings and arguments, to validate input with expected object with optional differences.
 
